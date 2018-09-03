@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GitTest</string>
     <string name="tusi">吐司</string>
+    <string name="title">我是标题</string>
 </resources>
