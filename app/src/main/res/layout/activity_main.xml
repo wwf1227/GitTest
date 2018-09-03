@@ -65,7 +65,7 @@
         android:layout_marginRight="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
-        android:text="@string/title3"
+        android:text="@string/title5"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/title"
         app:layout_constraintEnd_toEndOf="parent"
