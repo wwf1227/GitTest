@@ -29,10 +29,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     /**
      * 获取屏幕相关参数按钮点击事件
+     *
      * @param view
      */
     public void getScreenParams(View view) {
@@ -49,19 +48,22 @@ public class MainActivity extends AppCompatActivity {
         DisplayMetrics dm = new DisplayMetrics();
         //        dm = getResources().getDisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
+        //像素
         int heightPixels = dm.heightPixels;
         int widthPixels = dm.widthPixels;
+        //像素点
         float xdpi = dm.xdpi;
         float ydpi = dm.ydpi;
+        //密度
         int densityDpi = dm.densityDpi;
         float density = dm.density;
         float scaledDensity = dm.scaledDensity;
         float heightDP = heightPixels / density;
         float widthDP = widthPixels / density;
         float smallestWidthDP;
-        if(widthDP < heightDP) {
+        if (widthDP < heightDP) {
             smallestWidthDP = widthDP;
-        }else {
+        } else {
             smallestWidthDP = heightDP;
         }
         String str = "heightPixels: " + heightPixels + "px";
@@ -103,8 +105,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "pxValue2= " + pxValue2);
         Log.d(TAG, "dpValue= " + dpValue);
     }
-
-
 
 
 }
